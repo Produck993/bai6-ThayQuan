@@ -40,5 +40,17 @@ export class CanBoQuanLy {
     } return false    
 }
 
+    findName(ten : string) {
+        let index = -1
+        for (let i = 0; i < CanBoQuanLy.canbodanhsach.length; i ++ ) {
+            if ( ten === CanBoQuanLy.canbodanhsach[i]._hoten) {
+                index = i
+                break
+            }
+    }
+    if(index != -1) {
+    return CanBoQuanLy.canbodanhsach
+    }
 
+}
 }
